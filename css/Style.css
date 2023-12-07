@@ -1,0 +1,390 @@
+
+@import url('../css/fonts.css');
+
+html, body{
+    margin: auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+    /** theme colors*/
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+    --light-light-sage: #dce1d4;
+    --light-sage: #d8e3cc;
+    --dark-sage:#87986a;
+    --dark-dark-sage: #566243;
+
+}
+
+/*---------------------------Global Classes---------------------*/
+
+a{
+    text-decoration: none;
+    color: var(--text-sage);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h1{
+    font-family: Arial, sans-serif;
+    color: #202020;
+    font-size: 2.3rem;
+}
+
+h2{
+    font-family: Arial, sans-serif;
+    color: #202020;
+    font-size: 1.6rem;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+}
+
+h3{
+    font-family: Arial, sans-serif;
+    color: #202020;
+    font-size: 1.3rem;
+}
+
+h4{
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    color: #202020;
+}
+
+h5{
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #202020;
+}
+
+h6{
+    font-family: Arial, sans-serif;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Abel);
+    cursor: pointer;
+}
+
+span{
+    font-family: var(--Abel);
+}
+
+.container{
+    margin: 0 5vw;
+    margin-bottom: 10vh;
+}
+
+p{
+    font-family: Arial, sans-serif;
+    color: #202020;
+    font-size: 1rem;
+}
+
+hr{
+    color: var(--dark-sage);
+    width: 100%;
+    line-height: normal;
+}
+
+main,footer{
+    width: 70%;
+    margin: auto;
+    margin-top: 15vh;
+}
+
+li{
+    font-size: 0.85rem;
+}
+
+td{
+    text-align: left;
+    vertical-align: top;
+    padding-top: 10px;
+}
+
+/*--------------X------------Global Classes------------X--------*/
+
+/*-----------------------------navbar--------------------------*/
+
+.nav{
+    padding: 0 2rem;
+    height: auto;
+    min-height: 50px;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+    border-bottom: 0.08rem solid;
+    width: 70%;
+    margin: auto;
+
+}
+
+.fixed-top{
+    position: fixed;
+    top: 0%;
+    width: 70%;
+    background-color: #ffffff;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+    margin: auto;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.collapse{
+    height: 40rem;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.nav .nav-items{
+    list-style-type: none;
+    display: flex;
+    margin: 1;
+    align-items: center;
+}
+
+.nav .nav-items .nav-link{
+    padding: 2rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    text-decoration: solid;
+    color: #1f23289d;
+}
+
+.nav-link:hover a{
+    color: var(--dark-dark-sage);
+    text-decoration-line: underline;
+}
+
+/* toggle */
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.collapse{
+    height: 40rem;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    font-size: 1.4rem;
+    color: var(--white);
+}
+
+/*---------------X-------------navbar-------------X------------*/
+
+/*-------------------------Main Content---------------------------*/
+
+/*-----------------Site Title------------------*/
+
+.site-title{
+    padding-top: 1.5rem;
+    margin: auto;
+    top:max(500px, 50%);
+}
+
+.title{
+    text-align: center;
+}
+
+.job-title{
+    padding-top: 0.5rem;
+    font-style: italic;
+}
+
+.subtitle{
+    color: #1f23289d;
+    font-style: italic;
+}
+
+.badges{
+    justify-content: center;
+}
+
+.contact{
+    padding-top: 1.5rem;
+    justify-content: center;
+}
+
+.contact .contact-item{
+    padding: 0 0.3rem;
+}
+
+/*--------X--------Site Title---------X--------*/
+
+/*--------------X----------Main Content---------------X-----------*/
+
+.section{
+    margin-bottom: 20px;
+}
+
+.timing{
+    text-align: right;
+}
+
+.item{
+    padding-top: 20px;
+}
+
+.skill{
+    flex-basis: 20%;
+}
+
+.skill-content{
+    text-align: left;
+    flex-flow: column wrap;
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+}
+
+.project-description{
+    text-align: center;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.project-items{
+    list-style-type: none;
+    display: flex;
+    margin: 1;
+    align-items: center;
+}
+
+.project-image{
+    display:none;
+}
+
+.dive-deep-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.project-link{
+    text-align: center;
+    display: flex;
+}
+
+.project-link:hover a{
+    color: var(--dark-dark-sage);
+    text-decoration-line: underline;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.footer{
+    border-top: 0.08rem solid;
+    width: 70%;
+    margin: auto;
+    padding-top: 5vh;
+}
+
+.footer-text{
+    text-align: center;
+}
+
+/* Viewport less than or equal to 1130px*/
+
+@media only screen and (max-width: 1130px){
+    .site-content .post-content > .post-image .post-info{
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* Viewport less than or equal to 1130px*/
+
+/* Viewport less than or equal to 750px*/
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+
+    main .site-content{
+        grid-template-columns: 100%;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Viewport less than or equal to 520px*/
+
+@media only screen and (max-width: 520px){
+    main .blog{
+        height: 125vh;
+    }
+
+    .site-content .post-content > .post-image .post-info{
+        display: none !important;
+    }
+
+    footer.footer .container > div{
+        padding: 1rem .9rem !important;
+    }
+
+    footer .rights{
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+
+    nav .toggle-collapse{
+        width: 80% !important;
+    }
+
+}

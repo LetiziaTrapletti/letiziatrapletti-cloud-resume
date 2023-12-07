@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/Style.css">
+
+    <!--Font Awsome Icons-->
+    <link rel="stylesheet" href="./css/all.css">
+
+    <!-- Custom Javascript file -->
+    <script type="text/javascript" src="./js/main.js"></script>
+
+    <title>Letizia Trapletti - Cloud Resume </title>
+
+</head>
+
+<body onload="fetchVisitorCount(), updateVisitorCount()">
+
+    <!----------------------------Navigation----------------------------->
+
+    <nav class="nav fixed-top">
+        <div class="nav-menu flex-row">
+            <div>
+                <div class="toggle-collapse">
+                    <div class="toggle-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="#experience">Professional Experience</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#education">Education</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#skills">Leadership & Skills</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#projects">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-------------X---------------Navigation---------------X-------------->
+
+<!-------------------------Main Site Section--------------------------->
+
+    <main>
+        
+        <!----------------Site Title------------------>
+        <section class="section site-title">
+            <div class='title'> 
+                <h1>Letizia Trapletti</h1>
+                <h4 class="job-title">Senior Brand Specialist, Amazon Retail EU Sports</h4>
+                <p class="subtitle">SAA, DVA, and SysOps certified, I am undertaking a career shift to Amazon Web Services.</p>
+            </div>
+            <div class='flex-row badges'> 
+                    <div>                
+                        <a href="https://www.credly.com/badges/cc3028f1-2633-44ec-9683-1f9148bf0939" class="image" target="_blank">
+                            <img class="rounded float-start" src="./assets/CPF.png" class = "rounded-circle" alt ="Rounded Image" width="65" height="65" xmlns="CPF" role="img" aria-label="CPF" preserveAspectRatio="xMidYMid slice" focusable="false"><title>AWS CPF</title><rect width="100%" height="100%" fill="#777"/>
+                        </a>
+                    </div>
+                    <div>                
+                        <a href="https://www.credly.com/badges/560401cd-c976-4f81-a921-e9f93305964f" class="image" target="_blank">
+                            <img class="rounded float-start" src="./assets/SAA.png" class = "rounded-circle" alt ="Rounded Image" width="65" height="65" xmlns="SAA Certification" role="img" aria-label="SAA" preserveAspectRatio="xMidYMid slice" focusable="false"><title>AWS SAA</title><rect width="100%" height="100%" fill="#777"/>
+                        </a>
+                    </div>
+                    <div>                
+                        <a href="https://www.credly.com/badges/5120a3a6-ee5c-4308-9ecc-bc221eafe5d7" class="image" target="_blank">
+                            <img class="rounded float-start" src="./assets/DVA.png" class = "rounded-circle" alt ="Rounded Image" width="65" height="65" xmlns="DVA" role="img" aria-label="DVA" preserveAspectRatio="xMidYMid slice" focusable="false"><title>AWS DVA</title><rect width="100%" height="100%" fill="#777"/>
+                        </a>
+                    </div>
+                    <div>                
+                        <a href="https://www.credly.com/badges/178bd599-52b7-4ce6-a7b4-b2c5cfcd61ac" class="image" target="_blank">
+                            <img class="rounded float-start" src="./assets/SOA.png" class = "rounded-circle" alt ="Rounded Image" width="65" height="65" xmlns="DVA" role="img" aria-label="DVA" preserveAspectRatio="xMidYMid slice" focusable="false"><title>AWS DVA</title><rect width="100%" height="100%" fill="#777"/>
+                        </a>
+                    </div>
+                    <div>                
+                        <a href="https://www.credly.com/badges/39f50467-1bd5-4c06-bff0-cd5d2fea9e85" class="image" target="_blank">
+                            <img class="rounded float-start" src="./assets/cloud_economics_accreditation.png" class = "rounded-circle" alt ="Rounded Image" width="65" height="65" xmlns="econ" role="img" aria-label="econ" preserveAspectRatio="xMidYMid slice" focusable="false"><title>AWS DVA</title><rect width="100%" height="100%" fill="#777"/>
+                        </a>
+                    </div>
+                    <div>                
+                        <a href="https://www.credly.com/badges/92ff171b-43e4-47ae-ad64-e091baf75220" class="image" target="_blank">
+                            <img class="rounded float-start" src="./assets/generative_AI_essentials.png" class = "rounded-circle" alt ="Rounded Image" width="65" height="65" xmlns="econ" role="img" aria-label="econ" preserveAspectRatio="xMidYMid slice" focusable="false"><title>AWS DVA</title><rect width="100%" height="100%" fill="#777"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact flex-row"> 
+                <p class="contact-item">Email: <a href="mailto:trapletti.letizia@gmail.com" title="title">trapletti.letizia@gmail.com</a></p>
+                <p>-</p>
+                <a class="text-muted contact-item" href="https://www.linkedin.com/in/letizia-trapletti-926199172/" target="_blank">LinkedIn <i class="fa-brands fa-linkedin fa-lg"></i></a>
+
+            </div>
+        </section>
+
+        <!--------X-------Site Title-------X---------->
+        
+        <hr>
+
+        <!----------------Experience Section -------------->
+        
+        <section class="section experience" id="experience">  
+
+            <div class='title'> 
+                <h2>Professional Experience</h2>
+            </div>
+
+            <div class="item">
+                <div class=" flex-row">
+                    <div>
+                        <h4>Amazon</h4>
+                        <h6><em>Senior Brand Specialist</em></h6>
+                    </div>
+                    <div class="timing">
+                        <p>London, UK<br>Sept 2021 - Present</p>
+                    </div>
+                </div>
+                
+                <div class="col-12">
+                    <ul class="dashed">
+                        <li>Managed the end-to-end Amazon relationship with seasonal vendors across 10 European marketplaces, for a €50MM annual revenue portfolio including <a href="https://www.newellbrands.com/" target="_blank">Newell Brands</a>, <a href="https://www.ospreyeurope.com/gb_en" target="_blank">Osprey</a>, and <a href="https://yalehome.co.uk/" target="_blank">Yale</a>.</li>
+                        <li>Invented and scaled solutions to increase automation among retail teams, including a deals calculator (100+ users and 5.3FTE/fy savings) and a suite of vendor-facing reports (adopted across 10+ countries).</li>
+                        <li>Project managed a team of 6 BI facilitators, to provide commercial teams with informal tech support and bring existing Business Intelligence solutions to EU Sports (e.g., <a href="https://us-east-1.quicksight.aws.amazon.com/sn/dashboards/718ac2fd-eba9-43d7-8a0e-5f8bda6f4bbe/sheets/718ac2fd-eba9-43d7-8a0e-5f8bda6f4bbe_0da55558-863a-457b-809f-fae35c9993d7" target="_blank">in-season stock management dashboard</a> with a €115M entitlement).</li>
+                        <li>Coordinated the EU Vendor Experience data team to deliver the <a href="https://us-east-1.quicksight.aws.amazon.com/sn/dashboards/0d95f98e-b8cc-4849-8a4e-f4eb67dac799?#" target="_blank">WW VX Survey Dashboard</a> (shifting from a suboptimal 2022 excel solution) with an increased scope from EU to WW Retail, impacting 10+ central teams who leveraged the findings to define their OP1/OP2 goals.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class=" flex-row">
+                    <div>
+                        <h4>Amazon Logistics</h4>
+                        <h6><em>Finance Intern</em></h6>
+                    </div>
+                    <div class="timing">
+                        <p>London, UK<br>Mar 2021 - Sept 2021</p>
+                    </div>
+                </div>
+                
+                <div class="col-12">
+                    <ul class="dashed">
+                        <li>Owned financial reporting for Last Mile deliveries, and distributed it daily to 60+ Delivery Stations managers in the UK network.</li>
+                        <li>Introduced cost/productivity control and optimisation mechanisms, as least performing nodes' path-to-green.</li>
+                        <li>Developed an excel-based framework to automate the estimation of MBR labour costs and improve their accuracy.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        
+        <!-------X--------Experience Section -----X-------->
+
+        <hr>
+
+        <!----------------Education Section -------------->
+
+        <section class="section education" id="education">
+
+            <div class='title'> 
+                <h2>Education</h2>
+            </div>
+
+            <div class="experience-item">
+                <div class=" flex-row">
+                    <div>
+                        <h4>Erasmus Universiteit Rotterdam</h4>
+                        <h6><em>MSc in Finance and Investments</em></h6>
+                    </div>
+                    <div class="timing">
+                        <p>Rotterdam, NL<br>Sept 2019 - Jun 2022</p>
+                    </div>
+                </div>
+                
+                <div class="col-12">
+                    <ul>
+                        <li>Ranked #12 in the European Business School ranking – Financial Times (FT)</li>
+                        <li>Final Grade: 8 / 10 (Grade A equivalent)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class=" flex-row">
+                    <div>
+                        <h4>Università Bocconi</h4>
+                        <h6><em>MSc in Accounting Financial Management and Control</em></h6>
+                    </div>
+                    <div class="timing">
+                        <p>Milan, IT<br>Sept 2019 - Dec 2021</p>
+                    </div>
+                </div>
+                
+                <div class="col-12">
+                    <ul>
+                        <li>Double Degree MSc program with Erasmus Universiteit Rotterdam</li>
+                        <li>Final Grade: 110 cum laude / 110</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class=" flex-row">
+                    <div>
+                        <h4>Università Bocconi</h4>
+                        <h6><em>BSc in International Economics and Management</em></h6>
+                    </div>
+                    <div class="timing">
+                        <p>Milan, IT<br>Sept 2016 - Jul 2019</p>
+                    </div>
+                </div>
+                
+                <div class="col-12">
+                    <ul>
+                        <li>Exchange program with <strong>ESSEC Business School </strong>(Paris) - Bachelor of Business Administration</li>
+                        <li>Final Grade: 110 cum laude / 110</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-------X--------Education Section ------X------->
+
+        <hr>
+
+        <!----------------Skills Section -------------->
+
+        <section class="section skills" id = "skills">
+            
+            <div class='title'> 
+                <h2>Leadership & Skills</h2>
+            </div>
+
+            <table class="item" style="width: 100%;">
+                <tr>
+                    <td style="width:20%;">
+                        <h6>Technical</h6>
+                    </td>
+                    <td class="skill-content">
+                        <h5><em>Programming Languages</em> - Python, SQL, HTML;</h5>
+                        <h5><em>BI and other tools</em> - Quicksight, Excel, Power Pivot, other Microsoft Office tools.</h5>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="item" style="width: 100%;">
+                <tr>
+                    <td style="width:20%;">
+                        <h6>Certifications</h6>
+                    </td>
+                    </td>
+                    <td class="skill-content">
+                        <h5><em>AWS</em> - <a href="https://www.credly.com/badges/cc3028f1-2633-44ec-9683-1f9148bf0939"target="_blank">Cloud Practitioner</a> (Oct 2022), <a href="https://www.credly.com/badges/560401cd-c976-4f81-a921-e9f93305964f"target="_blank">Solutions Architect Associate</a> (Jan 2023), <a href="https://www.credly.com/badges/5120a3a6-ee5c-4308-9ecc-bc221eafe5d7" class="image" target="_blank">Developer Associate</a> (Aug 2023).</h5>
+                        <h5><em>Other</em> - Bloomberg Market Concept (Mar 2021), Alfiere del Lavoro (Nov 2016, honour received from the President of the Italian Republic Sergio Mattarella as one of the 25 Italian students with the best academic results).</h5>
+                    </td>
+                </tr>
+            </table>
+            
+            <table class="item" style="width: 100%;">
+                <tr>
+                    <td style="width:20%;">
+                        <h6>Languages</h6>
+                    </td>
+                    <td class="skill-content">
+                        <h5>English (Professional), Italian (Native), Spanish (Lower intermediate).</h5>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="item" style="width: 100%;">
+                <tr>
+                    <td style="width:20%;">
+                        <h6>Leadership</h6>
+                    </td>
+                    <td class="skill-content">
+                        <h5>Led a team of 4 to manage a portfolio of seasonal vendors, moving away from operational execution in favour of deliverying through others.</h5>
+                        <h5>Experience with project managing data teams (i.e., EU Sports Data & Analytics, WW Vendor Experience) to support business needs.</h5>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <!--------X-------Skills Section ------X------->
+
+        <hr>
+
+        <!----------------Projects Section -------------->
+
+        <section class="section projects" id="projects">
+
+            <div class='title'> 
+                <h2>Projects</h2>
+            </div>
+
+            <div class="item">
+                <div class="title">
+                        <h4>Cloud Resume Challenge</h4>
+                        <p class="project-description">This is my personal resume website, deployed using AWS resources including CloudFront, S3, API Gateway, Lambda and DynamoDB.</p> 
+                </div>
+
+                <div>
+                    <ul class="project-items">
+                        <div>
+                            <li class="project-link">
+                                <a onclick="showDiagram()">Click here for architecture dive deep</a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="project-image" id="myDIV">
+                    <img class="dive-deep-image" src="./assets/diagram.png" alt="">
+                </div>
+            
+        </section>
+
+
+    </main>
+
+<!----------------X--------Main Site Section--------------X------------>
+
+<!-------------------------Footer------------------------------->
+
+<footer class="footer">
+    <div>
+        <div class="footer-text">
+            <a class="text-muted contact-item" href="https://www.linkedin.com/in/letizia-trapletti-926199172/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+            <p> </p>
+            <p>Last updated: Oct/2023<br>Visitors: <span id="countDisplay" /></p>
+        </div>
+    </div>
+
+</footer>
+
+<!-------------X-----------Footer----------------X-------------->
+
+</body>

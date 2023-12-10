@@ -7,8 +7,9 @@ async function fetchVisitorCount() {
         throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const data = await response.json();
-        const count = Number(data.Item.count.N);
-        document.getElementById('countDisplay').textContent = count;
+        console.log(data);
+        const visitors = Number(data.count.N);
+        document.getElementById('countDisplay').textContent = visitors;
     } catch (error) {
         console.error('Error:', error);
     }

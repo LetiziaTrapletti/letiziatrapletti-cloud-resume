@@ -7,17 +7,12 @@ async function fetchVisitorCount() {
         throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const data = await response.json();
-        const count = Number(data.Item.count.N) + 1;
+        const count = Number(data.Item.count.N);
         document.getElementById('countDisplay').textContent = count;
     } catch (error) {
         console.error('Error:', error);
     }
 }
-
-//API call to update visitors count
-async function updateVisitorCount(){
-    fetch('https://r8qrilh5sb.execute-api.us-east-1.amazonaws.com/cloud-resume-visitors-put')
-        }
 
 // 
 const responsive = {
